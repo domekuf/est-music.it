@@ -1,0 +1,17 @@
+{
+    "name": "domekuf/raveneventi.it",
+    "authors": [
+        {
+            "name": "Domenico Di Iorio",
+            "email": "dome.diiorio@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.10",
+        "slim/php-view": "^2.2",
+        "twbs/bootstrap": "^4.1",
+        "components/jquery": "^3.3",
+        "slim/flash": "^0.4.0",
+        "components/font-awesome": "^5.0"
+    }
+}
