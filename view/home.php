@@ -3,7 +3,7 @@
 <div class="col-12 col-md-6 offset-md-3 text-dark text-center bg-light" style="opacity:0.8">
     <h1>RavenEventi.it</h1>
     <img src="<?=RT?>img/logo-02.png" alt="Raven eventi servizi per lo spettacolo">
-    <p></p>
+    <p><?=json_encode($test) ?> </p>
     <p>La passione diventa lavoro</p>
     <p><a href="mailto:info@raveneventi.it">info@raveneventi.it</a></p>
 </div>

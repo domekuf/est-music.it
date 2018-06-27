@@ -74,6 +74,7 @@ function createNav($t, $user_id) {
 
 $routes->any('/home', function ($request, $response, $args) {
     $args["flash"] = flash($this);
+    $args["test"] = ["abc", "bdf"];
     return $this->renderer->render($response, '/home.php', $args);
 })->setName("home");
 
