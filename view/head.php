@@ -24,7 +24,7 @@
         <meta name="theme-color" content="#ffffff">
         <meta name="msapplication-TileColor" content="#ffffff">
         <link rel="stylesheet" href="<?=BS?>css/bootstrap.min.css">
-        <link rel="stylesheet" href="<?=FA?>css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="<?=FA?>css/font-awesome.min.css">
         <link rel="stylesheet" href="<?=RT?>css/main.css">
     </head>
     <body>

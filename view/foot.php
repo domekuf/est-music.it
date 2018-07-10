@@ -1,10 +1,9 @@
-            <footer class="footer">
+            <!--footer class="footer">
                 <div class="container-fluid text-center">
                     <span style="font-size: 1.5vw" class="text-muted">
-                        RAVEN Soc. Coop, Via Maestri del lavoro, 8, 48124 Ravenna(RA), P.IVA 02587110392
                     </span>
                 </div>
-            </footer>
+            </footer-->
         </main>
         <script src="<?=JQ?>jquery.min.js"></script>
         <script src="<?=BS?>js/bootstrap.bundle.min.js"></script>
