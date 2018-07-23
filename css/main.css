@@ -13,12 +13,6 @@ body, html, main {
     outline: none;
 }
 
-#main {
-    background:url('/img/bg-03.jpg');
-    background-size:cover;
-    background-position-y: 15%;
-}
-
 a i {
     color: white;
 }

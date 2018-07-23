@@ -33,4 +33,6 @@
         <a class="navbar-brand" href="#" hidden><i class="fa fa-lock"></i><span class="d-none d-sm-inline"> Area Soci</span></a>
       </nav>
     </header>
-        <main role="main" class="container-fluid">
+    <div id="loader-wrapper">
+    </div>
+    <main role="main" class="container-fluid">
