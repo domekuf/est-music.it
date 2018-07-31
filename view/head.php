@@ -29,8 +29,12 @@
     </head>
     <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-light fixed-top" style="opacity:0.6">
-        <a class="navbar-brand" href="#" hidden><i class="fa fa-lock"></i><span class="d-none d-sm-inline"> Area Soci</span></a>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top d-none d-sm-inline text-uppercase text-center">
+        <a href="#"><span>H</span><span>ome</span></a>
+        <a href="#"><span>V</span><span>ideo</span></a>
+        <a href="#"><span>N</span><span>ews</span></a>
+        <a href="#"><span>B</span><span>io</span></a>
+        <a href="#"><span>C</span><span>ontatti</span></a>
       </nav>
     </header>
     <div id="loader-wrapper">

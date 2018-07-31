@@ -1,10 +1,20 @@
-            <!--footer class="footer">
-                <div class="container-fluid text-center">
-                    <span style="font-size: 1.5vw" class="text-muted">
-                    </span>
-                </div>
-            </footer-->
         </main>
+        <footer class="row w-100 position-fixed" style="top:95%" id="foot-social">
+            <div class="col-12 text-center">
+                <a href="https://www.facebook.com/electricstringtrio">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/est_musicproject">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCdY0dNJEseVizErYPH3kfyA">
+                    <i class="fa fa-youtube"></i>
+                </a>
+                <a href="https://itunes.apple.com/it/album/est-play-mozart-arr-for-jazz-trio/1364427290">
+                    <i class="fa fa-music"></i>
+                </a>
+            </div>
+        </footer>
         <script src="<?=JQ?>jquery.min.js"></script>
         <script src="<?=BS?>js/bootstrap.bundle.min.js"></script>
         <script src="<?=RT?>js/main.js"></script>

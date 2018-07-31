@@ -1,5 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/controller-news.php'; /* FbFeedNews */
+
 include ('config.php');
 
 use Slim\Views\PhpRenderer;
@@ -72,11 +74,17 @@ function createNav($t, $user_id) {
     return $nav;
 }
 
-$routes->any('/home', function ($request, $response, $args) {
+$routes->get('/home', function ($request, $response, $args) {
     $args["flash"] = flash($this);
     $args["test"] = ["abc", "bdf"];
     return $this->renderer->render($response, '/home.php', $args);
 })->setName("home");
+
+$routes->get('/news', function ($request, $response, $args) {
+    $args["flash"] = flash($this);
+    $args["news"] = FbFeedNews::get('electricstringtrio/feed?limit=15&fields=message,created_time'/*,full_picture,created_time,permalink_url'*/);
+    return $this->renderer->render($response, '/news.php', $args);
+})->setName("news");
 
 $routes->any('/page-1', function ($request, $response, $args) {
     $args["flash"] = flash($this);
