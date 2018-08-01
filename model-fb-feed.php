@@ -1,12 +1,11 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/credential.php'; /*$cred*/
+require_once __DIR__ . '/credentials.php'; /* Credentials */
 
 class FbFeed
 {
     static public function get($uri) {
-        global $cred;
-        $fb = new Facebook\Facebook($cred);
+        $fb = new Facebook\Facebook(Credentials::fb());
 
         $requestPage = $fb->request('GET', $uri);
 
