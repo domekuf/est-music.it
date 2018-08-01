@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
-require __DIR__ . '/controller-news.php'; /* FbFeedNews */
+require __DIR__ . '/controller-news.php'; /* ControllerNews */
 
 include ('config.php');
 
@@ -82,7 +82,7 @@ $routes->get('/home', function ($request, $response, $args) {
 
 $routes->get('/news', function ($request, $response, $args) {
     $args["flash"] = flash($this);
-    $args["news"] = FbFeedNews::get('electricstringtrio/feed?limit=15&fields=message,created_time'/*,full_picture,created_time,permalink_url'*/);
+    $args["news"] = ControllerNews::index($request, $response, $args);
     return $this->renderer->render($response, '/news.php', $args);
 })->setName("news");
 
