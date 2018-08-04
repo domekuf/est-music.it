@@ -31,11 +31,11 @@
     <body>
     <header>
       <nav class="navbar navbar-expand-md navbar-light fixed-top d-none d-sm-inline text-uppercase text-center">
-        <a href="#"><span class="first-letter-1">H</span><span>ome</span></a>
-        <a href="#"><span class="first-letter-2">V</span><span>ideo</span></a>
-        <a href="#"><span class="first-letter-4">N</span><span>ews</span></a>
-        <a href="#"><span class="first-letter-5">B</span><span>io</span></a>
-        <a href="#"><span class="first-letter-6">C</span><span>ontatti</span></a>
+        <a href="/app.php/home"><span class="first-letter-1">H</span><span>ome</span></a>
+        <a hidden href="/app.php/video"><span class="first-letter-2">V</span><span>ideo</span></a>
+        <a href="/app.php/news"><span class="first-letter-4">N</span><span>ews</span></a>
+        <a hidden href="#"><span class="first-letter-5">B</span><span>io</span></a>
+        <a hidden href="#"><span class="first-letter-6">C</span><span>ontatti</span></a>
       </nav>
     </header>
     <div id="loader-wrapper">
