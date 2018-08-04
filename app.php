@@ -86,6 +86,12 @@ $routes->get('/news', function ($request, $response, $args) {
     return $this->renderer->render($response, '/news.php', $args);
 })->setName("news");
 
+$routes->get('/video', function ($request, $response, $args) {
+    $args["flash"] = flash($this);
+//    $args["video"] = ControllerNews::index($request, $response, $args);
+    return $this->renderer->render($response, '/video.php', $args);
+})->setName("video");
+
 $routes->any('/page-1', function ($request, $response, $args) {
     $args["flash"] = flash($this);
     return $this->renderer->render($response, '/page-1.php', $args);
