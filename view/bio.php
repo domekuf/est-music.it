@@ -1,0 +1,7 @@
+<div class="row h-100 align-items-center" id="main">
+    <div class="col-12 col-md-10 offset-md-1 text-justify h-75 long-content-wrapper jumbotron">
+        <p>
+ If Mozart was alive what could he think about the work that EST dedicated to him? We don’t know but from his letters and his exuberant personality we are sure that Mozart was an innovator and creative artist, always capable to find new musical ideas and composition’s styles. The astonishment and the surprise were the feeling that Mozart hoped to arouse in his audience. Nowadays every kind of music is easily accessible and the borders between different musical genres are often thins and undefined. This is the starting point from where the EST project began its work. Through original arrangements EST brings back to life the composer’s music in a new interpretation’s key. From jazz to bossanova and from gipsy to waltz this experience find her place in EST music, that also make use of loop stations and various electronic effects. Violin, Cello, and Doublebass (electrics and acoustics) give voice to this turbolent mix of ideas. Nicola Nieddu, Antonio Cortesi, and Luca di Chiara belong to differents music backgrounds but they shared many experiences together. It’s hard to define “their” Mozart, however, creativity and irony are for sure the most relevant features together with the improvisation component and a wide use of effects.    
+        </p>
+    </div>
+</div>

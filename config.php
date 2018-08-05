@@ -3,21 +3,21 @@
 define("APP_ROUTES", "app.php");
 define("APP_ENTRY", "wip");
 function RT_generate() {
-    $rt = "//".$_SERVER["SERVER_NAME"]."/";
+    $rt = "//".$_SERVER["SERVER_NAME"];
     $req = explode("/", $_SERVER["REQUEST_URI"]);
     foreach ($req as $r) {
         if ($r == APP_ROUTES)
             break;
         if ($r == "")
             continue;
-        $rt .= $r."/";
+        $rt .= "/$r";
     }
     return $rt;
 }
 define("RT", RT_generate());
-define("BS", RT."vendor/twbs/bootstrap/dist/");
-define("JQ", RT."vendor/components/jquery/");
-define("FA", RT."vendor/components/font-awesome/");
+define("BS", RT."/vendor/twbs/bootstrap/dist");
+define("JQ", RT."/vendor/components/jquery");
+define("FA", RT."/vendor/components/font-awesome");
 define("DB", "database/db");
 define("TITLE", "est-music.it");
 

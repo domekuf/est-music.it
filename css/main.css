@@ -23,6 +23,10 @@ header a {
     margin: 1vw;
 }
 
+#menu-modal a {
+    font-size: 150%;
+}
+
 #foot-social a i {
     margin: 1vw;
 }
@@ -34,7 +38,7 @@ header a {
 /* Home */
 @media (orientation:portrait) {
     #home-main .letter, #home-main .letter img {
-        height: 10vh;
+        height: 15vh;
     }
 }
 
@@ -64,4 +68,9 @@ header a {
 /* News */
 .long-content-wrapper {
     overflow-y: scroll;
+}
+
+/* Contatti */
+.hover-decoration-none:hover {
+    text-decoration:none;
 }

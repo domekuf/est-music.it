@@ -58,39 +58,43 @@ function authenticate(&$response, $username) {
     cookieSet($response, "username", $username);
 }
 
-function createNav($t, $user_id) {
-    $pages = [
-        "Home" => ["home", []],
-        "Page1" => ["page-1", ["user_id" => $user_id]],
-        "Page2" => ["page-2", []]
-    ];
+$registered_routes = [
+    ["name" => "home"],
+    ["name" => "video"],
+    ["name" => "news", "controller" => ControllerNews, "action" => "index"],
+    ["name" => "bio"],
+    ["name" => "contatti"]
+];
+
+function createNav($_this) {
+    global $registered_routes;
     $nav = [];
-    foreach ($pages as $k=>$p) {
+    foreach ($registered_routes as $r) {
+        $n = $r["name"];
         $nav[] = [
-            "label"=>$k,
-            "link"=>$t->router->pathFor($p[0], $p[1])
+            "name"=>$n,
+            "link"=>$_this->router->pathFor($n)
         ];
     }
     return $nav;
 }
 
-$routes->get('/home', function ($request, $response, $args) {
-    $args["flash"] = flash($this);
-    $args["test"] = ["abc", "bdf"];
-    return $this->renderer->render($response, '/home.php', $args);
-})->setName("home");
-
-$routes->get('/news', function ($request, $response, $args) {
-    $args["flash"] = flash($this);
-    $args["news"] = ControllerNews::index($request, $response, $args);
-    return $this->renderer->render($response, '/news.php', $args);
-})->setName("news");
-
-$routes->get('/video', function ($request, $response, $args) {
-    $args["flash"] = flash($this);
-//    $args["video"] = ControllerNews::index($request, $response, $args);
-    return $this->renderer->render($response, '/video.php', $args);
-})->setName("video");
+foreach ($registered_routes as $r) {
+    $n = $r["name"];
+    $controller = $r["controller"];
+    $action = $r["action"];
+    $routes->get("/$n", function ($request, $response, $args) use($n, $controller, $action) {
+        if (isset($controller) && isset($action)) {
+            $args[$n] = $controller::$action($request, $response, $args);
+        }
+        $args["nav"] = createNav($this);
+        $args["title"] = " | $n";
+        $this->renderer->render($response, "/head.php", $args);
+        $this->renderer->render($response, "/$n.php", $args);
+        $this->renderer->render($response, "/foot.php", $args);
+        return;
+    })->setName($n);
+}
 
 $routes->any('/page-1', function ($request, $response, $args) {
     $args["flash"] = flash($this);

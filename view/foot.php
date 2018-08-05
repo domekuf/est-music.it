@@ -1,4 +1,3 @@
-        </main>
         <footer class="row w-100 position-fixed" style="top:95%" id="foot-social">
             <div class="col-12 text-center">
                 <a href="https://www.facebook.com/electricstringtrio">
@@ -15,9 +14,10 @@
                 </a>
             </div>
         </footer>
-        <script src="<?=JQ?>jquery.min.js"></script>
-        <script src="<?=BS?>js/bootstrap.bundle.min.js"></script>
-        <script src="<?=RT?>js/main.js"></script>
+        </main>
+        <script src="<?=JQ?>/jquery.min.js"></script>
+        <script src="<?=BS?>/js/bootstrap.bundle.min.js"></script>
+        <script src="<?=RT?>/js/main.js"></script>
     </body>
     <div class="modal fade" tabindex="-1" role="dialog" id="flash-modal">
         <div class="modal-dialog" role="document">
