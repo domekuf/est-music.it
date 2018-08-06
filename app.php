@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/controller-news.php'; /* ControllerNews */
+require __DIR__ . '/controller-bio.php'; /* ControllerBio */
 
 include ('config.php');
 
@@ -62,7 +63,7 @@ $registered_routes = [
     ["name" => "home"],
     ["name" => "video"],
     ["name" => "news", "controller" => ControllerNews, "action" => "index"],
-    ["name" => "bio"],
+    ["name" => "bio", "controller" => ControllerBio, "action" => "index"],
     ["name" => "contatti"]
 ];
 
