@@ -25,8 +25,8 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <link rel="stylesheet" href="<?=BS?>/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?=FA?>/css/font-awesome.min.css">
-        <link rel="stylesheet" href="<?=RT?>/css/main.css">
-        <link rel="stylesheet" href="<?=RT?>/css/first-letter.css">
+        <link rel="stylesheet" href="<?=RT?>/css/main.css?v=<?=md5_file("css/main.css")?>">
+        <link rel="stylesheet" href="<?=RT?>/css/first-letter.css?v=<?=md5_file("css/first-letter.css")?>">
     </head>
     <body>
     <main role="main" class="container-fluid">
