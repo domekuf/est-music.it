@@ -3,7 +3,11 @@ body, html, main {
     height: 100%;
 }
 
- a span, a {
+.h-90 {
+    height: 90%!important;
+}
+
+a span, a {
     color: #333;
     -webkit-transition: color 0.3s ease-in-out;
        -moz-transition: color 0.3s ease-in-out;
@@ -38,13 +42,13 @@ header a {
 /* Home */
 @media (orientation:portrait) {
     #home-main .letter, #home-main .letter img {
-        height: 15vh;
+        height: 25vh;
     }
 }
 
 @media (orientation:landscape) {
     #home-main .letter, #home-main .letter img {
-        height: 40vh;
+        height: 25vw;
     }
 }
 
