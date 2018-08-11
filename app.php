@@ -84,6 +84,27 @@ function asset($filename) {
     return RT."/$filename?v=".md5_file(AB."/$filename");
 }
 
+function social() {
+    $social = [];
+    $social[] = [
+        "link" => "https://www.facebook.com/electricstringtrio",
+        "icon" => "facebook"
+    ];
+    $social[] = [
+        "link" => "https://www.instagram.com/est_musicproject",
+        "icon" => "instagram"
+    ];
+    $social[] = [
+        "link" => "https://www.youtube.com/channel/UCdY0dNJEseVizErYPH3kfyA",
+        "icon" => "youtube"
+    ];
+    $social[] = [
+        "link" => "https://itunes.apple.com/it/album/est-play-mozart-arr-for-jazz-trio/1364427290",
+        "icon" => "music"
+    ];
+    return $social;
+}
+
 foreach ($registered_routes as $r) {
     $n = $r["name"];
     $controller = $r["controller"];
@@ -94,6 +115,7 @@ foreach ($registered_routes as $r) {
         }
         $args["nav"] = createNav($this);
         $args["title"] = " | $n";
+        $args["social"] = social();
         $args["css"] = [];
         $args["css"][] = asset(BS."/css/bootstrap.min.css");
         $args["css"][] = asset(FA."/css/font-awesome.min.css");
@@ -103,6 +125,7 @@ foreach ($registered_routes as $r) {
         $args["js"][] = asset(JQ."/jquery.min.js");
         $args["js"][] = asset(BS."/js/bootstrap.bundle.min.js");
         $args["js"][] = asset("js/main.js");
+
         $this->renderer->render($response, "/head.php", $args);
         $this->renderer->render($response, "/$n.php", $args);
         $this->renderer->render($response, "/foot.php", $args);

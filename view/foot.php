@@ -1,17 +1,10 @@
         <footer class="row w-100 position-fixed" style="top:95%" id="foot-social">
-            <div class="col-12 text-center">
-                <a href="https://www.facebook.com/electricstringtrio">
-                    <i class="fa fa-facebook"></i>
+            <div class="col-12 text-center d-none d-sm-block">
+                <?php foreach($social as $s) { ?>
+                <a href="<?=$s["link"]?>">
+                    <i class="fa fa-<?=$s["icon"]?>"></i>
                 </a>
-                <a href="https://www.instagram.com/est_musicproject">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/channel/UCdY0dNJEseVizErYPH3kfyA">
-                    <i class="fa fa-youtube"></i>
-                </a>
-                <a href="https://itunes.apple.com/it/album/est-play-mozart-arr-for-jazz-trio/1364427290">
-                    <i class="fa fa-music"></i>
-                </a>
+                <? } ?>
             </div>
         </footer>
         </main>

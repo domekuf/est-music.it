@@ -67,6 +67,13 @@
             <a href="<?=RT.$link?>"><span class="first-letter-<?=$index?>"><?=$first_letter?></span><span><?=$other_letters?></span></a><br/>
             <?php } ?>
           </div>
+          <div class="modal-footer">
+            <?php foreach($social as $s) { ?>
+            <a class="m-auto" href="<?=$s["link"]?>">
+                <i class="fa fa-<?=$s["icon"]?>"></i>
+            </a>
+            <? } ?>
+          </div>
         </div>
       </div>
     </div>
