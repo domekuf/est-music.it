@@ -4,7 +4,7 @@
                 <a href="<?=$s["link"]?>">
                     <i class="fa fa-<?=$s["icon"]?>"></i>
                 </a>
-                <? } ?>
+                <?php } ?>
             </div>
         </footer>
         </main>

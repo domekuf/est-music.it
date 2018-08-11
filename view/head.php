@@ -72,7 +72,7 @@
             <a class="m-auto" href="<?=$s["link"]?>">
                 <i class="fa fa-<?=$s["icon"]?>"></i>
             </a>
-            <? } ?>
+            <?php } ?>
           </div>
         </div>
       </div>
