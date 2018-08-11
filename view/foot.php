@@ -15,9 +15,9 @@
             </div>
         </footer>
         </main>
-        <script src="<?=JQ?>/jquery.min.js"></script>
-        <script src="<?=BS?>/js/bootstrap.bundle.min.js"></script>
-        <script src="<?=RT?>/js/main.js?v=<?=md5_file("js/main.js")?>"></script>
+        <?php foreach($js as $js_) { ?>
+        <script src="<?= $js_ ?>"></script>
+        <?php } ?>
     </body>
     <div class="modal fade" tabindex="-1" role="dialog" id="flash-modal">
         <div class="modal-dialog" role="document">

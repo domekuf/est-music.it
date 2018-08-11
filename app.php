@@ -80,6 +80,10 @@ function createNav($_this) {
     return $nav;
 }
 
+function asset($filename) {
+    return RT."/$filename?v=".md5_file(AB."/$filename");
+}
+
 foreach ($registered_routes as $r) {
     $n = $r["name"];
     $controller = $r["controller"];
@@ -90,6 +94,15 @@ foreach ($registered_routes as $r) {
         }
         $args["nav"] = createNav($this);
         $args["title"] = " | $n";
+        $args["css"] = [];
+        $args["css"][] = asset(BS."/css/bootstrap.min.css");
+        $args["css"][] = asset(FA."/css/font-awesome.min.css");
+        $args["css"][] = asset("css/main.css");
+        $args["css"][] = asset("css/first-letter.css");
+        $args["js"] = [];
+        $args["js"][] = asset(JQ."/jquery.min.js");
+        $args["js"][] = asset(BS."/js/bootstrap.bundle.min.js");
+        $args["js"][] = asset("js/main.js");
         $this->renderer->render($response, "/head.php", $args);
         $this->renderer->render($response, "/$n.php", $args);
         $this->renderer->render($response, "/foot.php", $args);

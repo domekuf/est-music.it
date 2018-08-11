@@ -23,10 +23,9 @@
         <meta name="msapplication-TileImage"            content="favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <meta name="msapplication-TileColor" content="#ffffff">
-        <link rel="stylesheet" href="<?=BS?>/css/bootstrap.min.css">
-        <link rel="stylesheet" href="<?=FA?>/css/font-awesome.min.css">
-        <link rel="stylesheet" href="<?=RT?>/css/main.css?v=<?=md5_file("css/main.css")?>">
-        <link rel="stylesheet" href="<?=RT?>/css/first-letter.css?v=<?=md5_file("css/first-letter.css")?>">
+        <?php foreach($css as $css_) { ?>
+        <link rel="stylesheet" href="<?= $css_ ?>">
+        <?php } ?>
     </head>
     <body>
     <main role="main" class="container-fluid">

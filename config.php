@@ -14,10 +14,11 @@ function RT_generate() {
     }
     return $rt;
 }
+define("AB", getcwd());
 define("RT", RT_generate());
-define("BS", RT."/vendor/twbs/bootstrap/dist");
-define("JQ", RT."/vendor/components/jquery");
-define("FA", RT."/vendor/components/font-awesome");
+define("BS", "vendor/twbs/bootstrap/dist");
+define("JQ", "vendor/components/jquery");
+define("FA", "vendor/components/font-awesome");
 define("DB", "database/db");
 define("TITLE", "est-music.it");
 
