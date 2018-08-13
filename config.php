@@ -1,7 +1,7 @@
 <?php
 
 define("APP_ROUTES", "app.php");
-define("APP_ENTRY", "wip");
+define("APP_ENTRY", "home");
 function RT_generate() {
     $rt = "//".$_SERVER["SERVER_NAME"];
     $req = explode("/", $_SERVER["REQUEST_URI"]);

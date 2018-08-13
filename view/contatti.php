@@ -4,7 +4,7 @@
             <i class="fa fa-phone fa-5x"></i>
             <br>
             <br>
-            333 7210495
+            +39 333 7210495
         </a>
     </div>
     <div class="col-12 text-center align-item-center">

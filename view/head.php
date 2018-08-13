@@ -43,7 +43,7 @@
         </nav>
         <nav class="d-sm-none text-right">
             <a class="d-sm-none" href="#" data-toggle="modal" data-target="#menu-modal" role="button">
-                <i class="fa fa-bars fa-2x"></i>
+                <i class="fa fa-bars fa-2x mt-3"></i>
             </a>
         </nav>
     </header>

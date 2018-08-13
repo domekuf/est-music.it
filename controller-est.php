@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/model-fb-feed.php'; /* FbFeed */
 
-class ControllerBio
+class ControllerEst
 {
     static public function index($request, $response, $args) {
         $fb_feed = FbFeed::get('electricstringtrio?fields=bio');

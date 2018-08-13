@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/controller-news.php'; /* ControllerNews */
-require __DIR__ . '/controller-bio.php'; /* ControllerBio */
+require __DIR__ . '/controller-est.php'; /* ControllerEst */
 
 include ('config.php');
 
@@ -61,9 +61,9 @@ function authenticate(&$response, $username) {
 
 $registered_routes = [
     ["name" => "home"],
+    ["name" => "est", "controller" => ControllerEst, "action" => "index"],
     ["name" => "video"],
     ["name" => "news", "controller" => ControllerNews, "action" => "index"],
-    ["name" => "bio", "controller" => ControllerBio, "action" => "index"],
     ["name" => "contatti"]
 ];
 
