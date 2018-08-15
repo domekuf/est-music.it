@@ -1,8 +1,8 @@
-        <footer class="row w-100 position-fixed" style="top:95%" id="foot-social">
+        <footer class="row w-100 position-fixed" style="top:92%" id="foot-social">
             <div class="col-12 text-center d-none d-sm-block">
                 <?php foreach($social as $s) { ?>
                 <a href="<?=$s["link"]?>">
-                    <i class="fa fa-<?=$s["icon"]?>"></i>
+                    <i class="fa fa-2x fa-<?=$s["icon"]?>"></i>
                 </a>
                 <?php } ?>
             </div>

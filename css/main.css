@@ -16,7 +16,7 @@ a span, a {
 }
 
 a:hover span,a:hover {
-    color: #ffb306;
+    color: #ebd3a3;
 }
 
 *:focus {
@@ -48,7 +48,7 @@ header a {
 
 @media (orientation:landscape) {
     #home-main .letter, #home-main .letter img {
-        height: 25vw;
+        height: 35vw;
     }
 }
 
@@ -72,6 +72,7 @@ header a {
 /* News */
 .long-content-wrapper {
     overflow-y: scroll;
+   -webkit-overflow-scrolling: touch;
 }
 
 /* Contatti */
