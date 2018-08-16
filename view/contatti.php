@@ -1,4 +1,4 @@
-<div class="row h-100 align-items-center" id="main">
+<div class="row h-90 align-items-center" id="main">
     <div class="col-12 text-center align-item-center">
         <a href="tel:3337210495" class="hover-decoration-none">
             <i class="fa fa-phone fa-5x"></i>

@@ -1,4 +1,4 @@
-<div class="row h-100 align-items-center" id="main">
+<div class="row h-90 align-items-center" id="main">
     <div class="col-12 col-md-10 offset-md-1 text-justify h-75 long-content-wrapper jumbotron">
         <div class="row" style="min-height:100%">
             <?php foreach ([
