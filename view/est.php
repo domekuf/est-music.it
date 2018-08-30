@@ -5,7 +5,7 @@
         </p>
         <div class="row text-center text-capitalize">
             <?php
-            foreach (["double-bass", "cello", "violin"] as $instrument) {
+            foreach ($est as $instrument=>$bio) {
             ?>
             <div class="col-12 col-sm-4">
                 <a href="#" data-toggle="modal" data-target="#modal-<?=$instrument?>">
@@ -14,7 +14,7 @@
                 </a>
             </div>
             <?php
-                $modals .= $this->fetch("/modal.php", ['id' => "modal-$instrument", 'title' => $instrument]);
+                $modals .= $this->fetch("/modal.php", ['id' => "modal-$instrument", 'title' => $instrument, 'content' => $bio]);
             }
             ?>
         </div>
