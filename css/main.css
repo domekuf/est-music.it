@@ -17,6 +17,7 @@ a span, a {
 
 a:hover span,a:hover {
     color: #ebd3a3;
+    text-decoration: none;
 }
 
 *:focus {
