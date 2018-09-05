@@ -64,7 +64,7 @@ $registered_routes = [
     ["name" => "est", "controller" => ControllerEst, "action" => "index"],
     ["name" => "video"],
     ["name" => "news", "controller" => ControllerNews, "action" => "index"],
-    ["name" => "contatti"],
+    ["name" => "contacts"],
     ["name" => "est play mozart"]
 ];
 

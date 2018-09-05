@@ -45,11 +45,17 @@ header a {
     #home-main .letter, #home-main .letter img {
         height: 25vh;
     }
+    #est-main .letter, #est-main .letter img {
+        height: 100vw;
+    }
 }
 
 @media (orientation:landscape) {
     #home-main .letter, #home-main .letter img {
         height: 35vw;
+    }
+    #est-main .letter, #est-main .letter img {
+        height: 45vw;
     }
 }
 

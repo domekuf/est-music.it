@@ -6,7 +6,7 @@
                 'sW5RD38L_VU',
                 'qi18Gk75NQo'
             ] as $video_id) { ?>
-            <div class="col-10 offset-1 col-md-6 offset-md-0 pb-4">
+            <div class="col-10 offset-1 col-md-4 offset-md-0 pb-4">
                 <?= $this->fetch("/video-player-yt.php", ['video_id' => $video_id]) ?>
             </div>
             <?php } ?>
