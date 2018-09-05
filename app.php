@@ -64,7 +64,8 @@ $registered_routes = [
     ["name" => "est", "controller" => ControllerEst, "action" => "index"],
     ["name" => "video"],
     ["name" => "news", "controller" => ControllerNews, "action" => "index"],
-    ["name" => "contacts"]
+    ["name" => "contacts"],
+    ["name" => "est play mozart"]
 ];
 
 function createNav($_this) {
@@ -106,10 +107,11 @@ function social() {
 }
 
 foreach ($registered_routes as $r) {
-    $n = $r["name"];
+	$n = $r["name"];
+	$n_=str_replace(' ', '-', $n);
     $controller = $r["controller"];
     $action = $r["action"];
-    $routes->get("/$n", function ($request, $response, $args) use($n, $controller, $action) {
+    $routes->get("/$n_", function ($request, $response, $args) use($n, $n_, $controller, $action) {
         if (isset($controller) && isset($action)) {
             $args[$n] = $controller::$action($request, $response, $args);
         }
@@ -127,7 +129,7 @@ foreach ($registered_routes as $r) {
         $args["js"][] = asset("js/main.js");
 
         $this->renderer->render($response, "/head.php", $args);
-        $this->renderer->render($response, "/$n.php", $args);
+        $this->renderer->render($response, "/$n_.php", $args);
         $this->renderer->render($response, "/foot.php", $args);
         return;
     })->setName($n);
