@@ -14,6 +14,6 @@ class ControllerNews
                 $fb_feed_filtered[] = $d;
             }
         }
-        return $fb_feed_filtered;
+        return ["data" => $fb_feed_filtered];
     }
 }
